@@ -1,0 +1,162 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background: black;
+    position: relative;
+}
+
+.wrapper{
+    position: absolute;
+    top: -20px;
+    margin-top: 20px;
+    width: 100%;
+    height: calc(100vh - 20px);
+    overflow: hidden;
+}
+
+.page{
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    background: black;
+}
+
+.tab-panel{
+    display: flex;
+    height: 39px;
+    background: grey;
+}
+
+
+.tab{
+    position: relative;
+    padding-top: 7px;
+    width: 200px;
+    height: 30px;
+    color: black;
+    border: 1px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.shadow{
+    text-shadow: 
+        1px 1px 2px white, /* Вариант 1: Небольшое смещение вправо и вниз */
+        -1px -1px 2px white, /* Вариант 2: Небольшое смещение влево и вверх */
+        1px -1px 2px white, /* Вариант 3: Небольшое смещение вправо и вверх */
+        -1px 1px 2px white; /* Вариант 4: Небольшое смещение влево и вниз */
+}
+ 
+.tab-title{
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tab-close{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.tab-close::before, .tab-close::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 15px;
+    background: black;
+    
+}
+
+.tab-close::after{
+    transform: rotate(90deg);
+}
+
+.webview{
+    display:inline-flex;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+            border: 2px solid green;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+}
+
+.webview.active {
+    border-color: red;
+}
+.webview.hidden {
+    display: none; /* Скрываем неактивные вебвью */
+}
+
+/*
+    height: calc(100vh - 60px);
+*/
+
+.browser-tools{
+    display: flex;
+    width: 100%;
+    background: rgb(9, 247, 25);
+}
+
+.button-container{
+    display: contents;
+    
+}
+
+.url-input{
+    width: 30vh;
+    flex: 1;
+    padding-bottom: 5px;
+    background: grey;
+    color: white;
+}
+
+
+
+
+/*
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100wh;
+    height: 100wh;
+    background: black;
+    
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: -1;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: greenyellow;
+}
+
+.navigation{
+    display: flex;
+    
+}
+
+.navigation__adress{
+    width: 100%;
+}
+    */ 
